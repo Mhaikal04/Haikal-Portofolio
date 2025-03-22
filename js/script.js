@@ -1,0 +1,1 @@
+console.log("Muhammad Haikal Portfolio Loaded Successfully");
