@@ -2,11 +2,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
 }
 body {
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
   color: #333;
+  line-height: 1.6;
 }
 header {
   background-color: #004080;
@@ -28,13 +29,24 @@ nav ul li a {
   font-weight: bold;
 }
 section {
-  padding: 40px 20px;
-  max-width: 900px;
+  padding: 50px 20px;
+  max-width: 1000px;
   margin: auto;
 }
 section h2 {
   color: #004080;
   margin-bottom: 20px;
+}
+.card, .project-card {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+.card:hover, .project-card:hover {
+  transform: scale(1.05);
 }
 footer {
   background-color: #004080;
@@ -44,4 +56,13 @@ footer {
 }
 a {
   color: #004080;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
